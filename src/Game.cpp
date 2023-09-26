@@ -24,7 +24,7 @@ Game::Game(string title){
 		exit(-1);
 	}
 
-	int img_flags = IMG_INIT_JPG | IMG_INIT_PNG | IMG_INIT_TIF;
+	int img_flags = IMG_INIT_JPG | IMG_INIT_PNG;
 	int img_init = IMG_Init(img_flags);
 	if(img_init != img_flags){
 		printf("%s\n", SDL_GetError());
